@@ -47,7 +47,13 @@ namespace _5204_mypassion_project_n1010101010.Controllers
             return Ok(product);
         }
 
-
+        /// <summary>
+        /// Gets the categories associated with a particular product, alongside a status code of 200 (OK)
+        /// </summary>
+        /// <param name="id">The Input Product ID</param>
+        /// <returns>
+        /// A list of categories for the product, stored in data transfer objects.
+        /// </returns>
         public IHttpActionResult GetCategoriesForProduct(int id)
         {
            
